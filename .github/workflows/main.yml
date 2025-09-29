@@ -12,8 +12,8 @@ jobs:
         with:
           python-version: "3.11"
       - run: python -m pip install --upgrade pip pyinstaller selenium
-      - run: pyinstaller --onefile --noconsole LiteSurveyInterceptorOBF.py
+      - run: pyinstaller --onefile --noconsole LiteSurveyInterceptor.py
       - uses: actions/upload-artifact@v4
         with:
           name: SurveyInterceptor-exe
-          path: dist/LiteSurveyInterceptorOBF.exe
+          path: dist/LiteSurveyInterceptor.exe
